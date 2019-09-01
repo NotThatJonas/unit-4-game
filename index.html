@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Crystal Collectors</title>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Added a link to our external stylesheet-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col">
+            <h1>Crystal Collectors</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">Rules</div>
+    </div>
+    <div class="row">
+        <div class="col">Random Number: <span id="random-number"></span></div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-1">Wins: <span id="game-wins"></span></div>
+        <div class="col-md-1">losses: <span id="game-losses"></span></div>
+        <div class="col"></div>
+    </div>
+    <div class="row">
+        <button>
+            <img id="stone1" src="./assets/images/pentagonGem.png" alt="pentagonGem" height="150px" width="150px">
+        </button>
+        <button>
+            <img id="stone2" src="./assets/images/pinkStone" alt="Pink Stone" height="150px" width="150px">
+        </button>
+        <button>
+            <img id="stone3" src="./assets/images/purpleHeart.jpg" alt="Purple Heart" height="150px" width="200px">
+        </button>
+        <button>
+            <img id="stone4" src="./assets/images/rubyStone.jpg" alt="ruby Stone" height="150px" width="150px">
+        </button>
+
+    </div>
+    <div class="row">
+            <div class="col">Your Total Score: </div>
+    </div>
+    <div class="row">
+            <div class="col"><span id="total-score">0</span></div>
+    </div>
+
+
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
