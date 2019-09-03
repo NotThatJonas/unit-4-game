@@ -84,12 +84,14 @@ $('#stone4').on('click', function () {
     }; 
 });
 
-
+if (totalScore > randomNumber) {
+    $('#total-score').text(0); 
+};
 
 //restart game on win(being equal to the OG selected number) or lose going over
 function restart () {
     if (totalScore > randomNumber) {
-        $('total-score').text(0);
+        $('#total-score').text(0);
         randomNumber = Math.floor(Math.random() * (120 - 19 + 1) + 19);
         $('#random-number').text(randomNumber);
         stone1 = Math.floor(Math.random() * (12 - 1) + 1);
@@ -98,6 +100,7 @@ function restart () {
         stone4 = Math.floor(Math.random() * (12 - 1) + 1);
         totalScore = 0;
     };
+
     if (totalScore === randomNumber) {
         randomNumber = Math.floor(Math.random() * (120 - 19 + 1) + 19);
         $('#random-number').text(randomNumber);
@@ -108,5 +111,6 @@ function restart () {
         totalScore = 0;
         $('#total-score').text(0); 
     };
+
 
 };
