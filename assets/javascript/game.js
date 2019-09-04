@@ -84,9 +84,6 @@ $('#stone4').on('click', function () {
     }; 
 });
 
-if (totalScore > randomNumber) {
-    $('#total-score').text(0); 
-};
 
 //restart game on win(being equal to the OG selected number) or lose going over
 function restart () {
